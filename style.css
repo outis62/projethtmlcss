@@ -85,7 +85,11 @@ input[type="search"]
 {
 	display: block;
     background-color: #F5F5F5;
-    border: none;
+    border-bottom: 1px black solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
 }
 .search input[type="search"]:hover
 {
@@ -314,7 +318,7 @@ summary:hover
 }
 .scttd1
 {
-    width: 550px;
+    width: 100%;
     margin: 0px;
 }
 .container 
@@ -354,30 +358,33 @@ summary:hover
 }
 #down2
 {
-	margin-left: 470px;
+	margin-left: 468px;
 }
-#down3,#down4
+#down3
 {
-	margin-left: 325px;
+	margin-left: 330px;
+}
+#down4{margin-left: 320px;
 }
 #down5
 {
-	margin-left: 295px;
+	margin-left: 290px;
 }
 .sectionen{
    	background-color: #F5F5F5;
 }
 .searchen input[type="search"]:not{
-  width: 50%;
-  margin-left: 80px;
-  padding: 15px;
+   width: 50%;
+   margin-left: 80px;
+   padding: 15px;
 }
 .searchen
 input[type="search"]{
 	display: block;
-background-color: #F5F5F5;
-border: none;
-font-size: 20px;
+    background-color: #F5F5F5;
+    border: none;
+    font-size: 20px;
+    outline: none;
 }
 .searchen
 input[type="search"]:hover{
@@ -493,6 +500,7 @@ aside a
 	position: relative;
 	bottom: 50px;
 }
+.colsct3{display: flex; margin-left: 45px}
 footer
 {
 	background-color: #002a40;
@@ -538,3 +546,114 @@ footer img
 	margin-left: 955px;
 	display: flex;
 }
+
+/*pour telephone*/
+@media screen and (max-width:420px){
+  .logo{position: relative; left: 50px}
+  .en-tete{width: 100%; display: inline-block;}
+  .titre{margin-left: 100px}
+  .drapeau{position: relative; right: 210px;}
+  .flag{margin-left: 170px}
+  nav{width: 100%;}
+  nav a{ position: relative; right: 90px; font-size: 13px;}
+  nav a:hover{padding: 5px; background-color: white; color: black;}
+  .search input[type="search"]{width: 400px; position: relative; right: 118px}
+  #btnrcha{position: relative; left: 100px; top: 5px;}
+  .search{position: relative; right: 150px;display: inline-block;}
+  .colgnrl{display: inline-block; position: relative; left: 60px;}
+  .col1, .col2, .col3, .col4{width: 230px; margin: 15px}
+  .section1 a{margin-left: 105px}
+  .gnrl{display: inline-block; position: relative; width: 300px; left: 30px}
+  .a1{position: relative; right: 340px; width: 200px}
+  .colsct3{display: inline-block; position: relative; right: 33px; width: 400px}
+  .scttd1 hr{width: 300px}
+  .foot{display: inline-block; margin-left: 40px}
+  footer{width: 100%; position: relative; left: 0px}
+  .foot a{position: relative; left: 15px}
+  .imgfoot, .lasta{position: relative; right: 800px}
+  footer hr{width: 400px}
+  .searchen{display: inline-block;}
+  .searchen input[type="search"]{width: 350px; position: relative; right: 240px}
+  #btnrchen{position: relative; right: 40px; top: 5px;}
+  .section2en{display: inline-block; position: relative; right: 120px; width: 350px;}
+  .asien{position: relative; right: 150px; display: flex; width: 50px}
+  .div2{position: relative; right: 100px; width: 350px; margin-top: 30px}
+  .div2 h3{width: 250px; position: relative; left: 4px;}
+  .div2 hr{width: 310px}
+}
+
+/*pour tablette*/
+
+@media screen and (width:600px){
+  .logo{position: relative; left: 130px}
+  .en-tete{width: 100%; display: inline-block;}
+  .titre{margin-left: 180px}
+  .drapeau{position: relative; right: 180px;}
+  .flag{margin-left: 270px}
+  nav{width: 100%;}
+  nav a{ position: relative; right: 90px;}
+  nav a:hover{padding: 5px; background-color: white; color: black;}
+  .search input[type="search"]{width: 500px; position: relative; right: 0px; top: 5px;}
+  #btnrcha{position: relative; left: 0px; top: 5px;}
+  .search{position: relative; right: 150px;display: flex;}
+  .colgnrl{display: flex; flex-flow: row wrap; position: relative; left: 50px;}
+  .col1, .col2, .col3, .col4{width: 200px; margin: 15px}
+  .section1 a{margin-left: 195px}
+  .gnrl{display: flex; flex-flow: row wrap; position: relative; width: 600px; left: 0px}
+  .cols2{width: 190px}
+  .gnrl hr{position: relative; right: 5px}
+  .a1{position: relative; right: 255px; width: 200px}
+  .colsct3{display: inline-block; position: relative; left: 60px; width: 400px}
+  .foot{display: flex; flex-flow: row wrap; margin-left: 40px}
+  footer{width: 100%; position: relative; left: 0px}
+  .foot a{position: relative; right: 30px}
+  .foot p{position: relative; right: 30px}
+  .foot img{position: relative; right: 35px}
+  .contact{position: relative; left: 250px; bottom: 255px}
+  .imgfoot, .lasta{position: relative; right: 760px; bottom: 200px}
+  footer hr{width: 500px; position: relative; bottom: 150px}
+  .copyright{position: relative; bottom: 100px}
+  .searchen{display: flex;}
+  .searchen input[type="search"]{width: 300px; position: relative; right: 150px; top: 5px}
+  #btnrchen{position: relative; right: 150px; top: 5px;}
+  .section2en{display: inline-block; position: relative; right: 40px; width: 350px;}
+  .asien{position: relative; right: 150px; display: flex; width: 50px}
+  .div2{position: relative; right: 100px; width: 350px; margin-top: 30px}
+  .div2 h3{width: 250px; position: relative; left: 4px;}
+  .div2 hr{width: 310px}
+}
+
+/*pour desktop*/
+
+/*@media screen and (max-width:768px){
+  .logo{position: relative; left: 50px}
+  .en-tete{width: 100%; display: inline-block;}
+  .titre{margin-left: 100px}
+  .drapeau{position: relative; right: 210px;}
+  .flag{margin-left: 190px}
+  nav{width: 100%;}
+  nav a{ position: relative; right: 90px;}
+  nav a:hover{padding: 5px; background-color: white; color: black;}
+  .search input[type="search"]{width: 400px; position: relative; right: 118px}
+  #btnrcha{position: relative; left: 100px; top: 5px;}
+  .search{position: relative; right: 150px;display: inline-block;}
+  .colgnrl{display: inline-block; position: relative; left: 60px;}
+  .col1, .col2, .col3, .col4{width: 230px; margin: 15px}
+  .section1 a{margin-left: 105px}
+  .gnrl{display: inline-block; position: relative; width: 300px; left: 30px}
+  .a1{position: relative; right: 340px; width: 200px}
+  .colsct3{display: inline-block; position: relative; right: 33px; width: 400px}
+  .foot{display: inline-block; margin-left: 40px}
+  footer{width: 100%; position: relative; left: 0px}
+  .foot a{position: relative; left: 15px}
+  .imgfoot, .lasta{position: relative; right: 800px}
+  footer hr{width: 400px}
+  .searchen{display: inline-block;}
+  .searchen input[type="search"]{width: 350px; position: relative; right: 240px}
+  #btnrchen{position: relative; right: 40px; top: 5px;}
+  .section2en{display: inline-block; position: relative; right: 120px; width: 350px;}
+  .asien{position: relative; right: 150px; display: flex; width: 50px}
+  .div2{position: relative; right: 100px; width: 350px; margin-top: 30px}
+  .div2 h3{width: 250px; position: relative; left: 4px;}
+  .div2 hr{width: 310px}
+}*/
