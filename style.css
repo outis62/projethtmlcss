@@ -85,7 +85,7 @@ input[type="search"]
 {
 	display: block;
     background-color: #F5F5F5;
-    border-bottom: 1px black solid;
+    border-bottom: 1px gray solid;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -162,7 +162,8 @@ input[type="search"]
 {
 	border: 0px black solid;
 	margin-left: 50px;
-	background-color: #f5f5f5 !important;
+	background-color: white;
+	box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2),0 6px 6px 0 rgba(0,0,0,0.19);
 	border-radius: 3px;
 	text-align: center;
 	width: 25%;
@@ -170,7 +171,7 @@ input[type="search"]
 }
 .col1:hover,.col2:hover,.col3:hover,.col4:hover
 {
-   -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+   box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
    background: linear-gradient(180deg,#448AFF,#002a40);
    color: white;
    cursor: pointer;
@@ -188,6 +189,8 @@ input[type="search"]
 	padding-left: 30px;
 	padding-right: 30px;
 	margin-left: 530px;
+	position: relative;
+	top: 15px;
 	color: white;
 }
 .cols2:hover
@@ -586,6 +589,7 @@ footer img
 
 @media screen and (width:600px){
   .logo{position: relative; left: 130px}
+  background-color{}
   .en-tete{width: 100%; display: inline-block;}
   .titre{margin-left: 180px}
   .drapeau{position: relative; right: 180px;}
